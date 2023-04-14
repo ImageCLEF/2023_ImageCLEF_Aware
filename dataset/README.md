@@ -34,6 +34,8 @@ It is only useful to illustrate the expected format of the runs submitted by par
 The images themselves are not provided in order to protect the anonymity of the users included in the dataset.
 All participants have access to the data which will allow them to automatically compute user ratings and thus propose a solution to the task.
 
+5.  ``` evaluate.py ``` is a script allowing to verify the format of the submissions but also to calculate the scores on the validation subset.
+
 A more detailed description of the file format is provided below.
 
 ### 1.class_scores.json
@@ -107,5 +109,14 @@ The format is the same as that of the ground truth files.
     },
     userId2 {
         ...
-}```
+}
+```
 
+
+### 5. evaluate python script
+This script allows to verify the format of the submissions but also to calculate the scores on the validation subset.
+
+Usage : 
+- The script uses scipy, please make sure to install the dependency. 
+- Change the SUBMISSION_FILE_PATH variable at the top of the file accordingly.
+- Run the script
